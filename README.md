@@ -1,6 +1,10 @@
 ## Getting and Cleaning Data README
 This R script utilizes the UCI HAR Dataset for the Getting and Cleaning Data course project from Coursera. This script doesn't need user-input.
 
+A full description is available at the site where the data was obtained:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The dataset can be found by this zip: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 ## run_analysis
 this is the main function that 
 1.	Initializes the tidyr and dplyr libraries, both which are used throughout the script

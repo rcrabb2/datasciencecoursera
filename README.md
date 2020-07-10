@@ -1,5 +1,5 @@
 ## Getting and Cleaning Data README
-This R script utilizes the UCI HAR Dataset for the Getting and Cleaning Data course project from Coursera
+This R script utilizes the UCI HAR Dataset for the Getting and Cleaning Data course project from Coursera. This script doesn't need user-input.
 
 ## run_analysis
 this is the main function that 

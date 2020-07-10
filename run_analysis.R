@@ -27,7 +27,13 @@ run_analysis <- function(){
   allData <- rbind(testData,trainData)
   names(allData)[1] <- 'Subject'
   
-  allData
+  ##This calculates the mean for each subject-activity pairing
+  allData <- allData %>%
+    group_by(Subject,Activity) %>%
+    summarise_all(list(mean))
+  
+  ##This writes the result as a file
+  write.table(allData,"./data/question5result",row.names=FALSE)
 }
 ##This, as the name implies, parses the Features File to make it usable
 parseFeaturesFile <- function(){
@@ -70,15 +76,3 @@ gettingFile <- function(folder,features){
   combinedData <- cbind(y,x)
   combinedData <- cbind(subject,combinedData)
 }
-
-##As this is something outside the regular data, I decided to make a mini function
-## as question 5 involves exporting a document
-forQuestion5 <- function(dataframe){
-  ##Dplyr and tidyr worked great for getting this done quickly
-  dataframe <- dataframe %>%
-    group_by(Subject,Activity) %>%
-    summarise_all(list(mean))
-  
-  write.table(dataframe,"./data/question5result",row.names=FALSE)
-}
-

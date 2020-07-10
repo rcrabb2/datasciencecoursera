@@ -7,7 +7,8 @@ this is the main function that
 2.	Creates the /data/ directory with the zip file that contains the UCI HAR Dataset, if not already there
 3.	Calls the parseFeaturesFile function
 4.	Creates the test and train datasets using the gettingData function
-5.	Combines the 2 datasets together to create the master dataset which is returned
+5.	Combines the 2 datasets together to create the master dataset
+6. Uses the master dataset to calculate the mean of each subject-activity pair and creates a file that contains the result of that
 
 ## parseFeaturesFile
 takes the features.txt file, cleans it up, and makes a list from it. 

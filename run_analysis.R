@@ -1,3 +1,4 @@
+##This is the main function that is run
 run_analysis <- function(){
   library(dplyr)
   library(tidyr)

@@ -21,9 +21,6 @@ takes the parseFeaturesFile output (a list) as well as a the folder that I’m i
 5.	Combines the std and mean data frames to become x data frame again
 6.	Combines x, y, and subject data frames together into 1 complete data frame which is returned
 
-## forQuestion5
-takes the result of cleaningData and calculates the mean of each variable based on subject and activity. The result is a text file of the data frame.
-
 ## License
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
